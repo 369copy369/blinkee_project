@@ -1,0 +1,1 @@
+Blinkee project created for recruitment purposes
