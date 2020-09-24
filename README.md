@@ -16,7 +16,8 @@ cd project/
 php artisan db:create blinkee
 php artisan migrate
 
-
+# faking some data and placing them in db
+php artisan db:seed 
 
 
 
