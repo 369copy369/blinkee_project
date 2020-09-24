@@ -13,14 +13,14 @@ class CreateMagazineAndPublisherColumns extends Migration
      */
     public function up()
     {
-        Schema::create('magazine', function (Blueprint $table) {
+        Schema::create('magazines', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->integer('publisher_id')->unsigned()->index()->foreign()->references("id")->on("publishers");
             $table->timestamps();
         });
 
-        Schema::create('publisher', function (Blueprint $table) {
+        Schema::create('publishers', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->timestamps();
@@ -34,7 +34,7 @@ class CreateMagazineAndPublisherColumns extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('magazine');
-        Schema::dropIfExists('publisher');
+        Schema::dropIfExists('magazines');
+        Schema::dropIfExists('publishers');
     }
 }
