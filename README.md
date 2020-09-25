@@ -6,8 +6,8 @@ git clone https://github.com/369copy369/blinkee_project.git
 # after cloning add "127.0.0.1  project.test" to etc/hosts file
 
 # create .env file
-cd blinkee_project/project/
-cp .env.example .env
+cd blinkee_project/project/ <br />
+cp .env.example .env <br />
 cd ..
 
 # go to laradock folder
