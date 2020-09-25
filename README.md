@@ -32,7 +32,7 @@ php artisan key:generate
 php artisan db:create blinkee <br />
 php artisan migrate
 
-# faking some data and placing them in db
+# faking some data and placing them in db (creates: 250 magazines, 50 publishers and one user account (email: admin, password: admin) - as stated in the project description..)
 php artisan db:seed
 
 # set jwt secret in .env
