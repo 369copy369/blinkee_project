@@ -1,5 +1,7 @@
 Blinkee project created for recruitment purposes
 
+# after 'git clone <repo>' add "127.0.0.1  project.test" to etc/hosts file
+
 # go to laradock folder
 cd laradock/
 
@@ -13,18 +15,20 @@ docker exec -it laradock_workspace_1 bash
 cd project/
 
 # create database (with custom ruby on rails like style command line) and run migration on it
-php artisan db:create blinkee
+php artisan db:create blinkee <br />
 php artisan migrate
 
 # faking some data and placing them in db
 php artisan db:seed 
 
+# set jwt secret in .env
+php artisan jwt:secret
 
 
 
 
 # to get to PHPMyAdmin:
-http://localhost:8081/index.php
+http://project.test:8081/index.php
 Server: mysql
 Username: root
 Password: root

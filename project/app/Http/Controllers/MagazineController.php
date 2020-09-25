@@ -9,11 +9,13 @@ class MagazineController extends Controller
 {
     public function __construct()
     {
-        // $this->middleware('api');
+        $this->middleware('auth:api');
     }
 
     /**
      * Magazines search endpoint
+     * 
+     * @return \Illuminate\Http\JsonResponse
      */
     public function search () 
     {
@@ -28,6 +30,8 @@ class MagazineController extends Controller
      * Show magazine by given id
      * 
      * @param integer $id
+     * 
+     * @return \Illuminate\Http\JsonResponse
      */
     public function show ($id) 
     {

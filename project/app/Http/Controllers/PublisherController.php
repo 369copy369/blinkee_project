@@ -9,11 +9,13 @@ class PublisherController extends Controller
 {
     public function __construct()
     {
-        // $this->middleware('api');
+        $this->middleware('auth:api');
     }
 
     /**
      * Publishers list
+     * 
+     * @return \Illuminate\Http\JsonResponse
      */
     public function list(Request $request)
     {
