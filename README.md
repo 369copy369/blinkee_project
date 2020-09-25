@@ -28,7 +28,7 @@ php artisan jwt:secret
 
 
 # to get to PHPMyAdmin:
-http://project.test:8081/index.php
-Server: mysql
-Username: root
+http://project.test:8081/index.php <br />
+Server: mysql <br />
+Username: root <br />
 Password: root
